@@ -36,7 +36,13 @@ const Doctors = () => {
 
   return (
     <>
-      <div className={`${status.isDeleteConfirmationModalOpen || status.isDoctorDetailModalOpen ? "overlay" : ""}`}></div>
+      <div
+        className={`${
+          status.isDeleteConfirmationModalOpen || status.isDoctorDetailModalOpen
+            ? "overlay"
+            : ""
+        }`}
+      ></div>
       <div className={`w-full`}>
         <div className="w-full flex justify-between px-8 pt-16 mb-16">
           <h1 className="text-2xl">Doctors</h1>
@@ -47,6 +53,12 @@ const Doctors = () => {
             + Add doctor
           </button>
         </div>
+        {doctors.length === 0 && (
+          <p className="text-[#818181] font-light text-center">
+            There are no doctors at the moment, please create some by clicking
+            in "+ add doctor" button...{" "}
+          </p>
+        )}
         <div>
           {doctors.map((doctor) => (
             <Doctor key={doctor.id} doctor={doctor} />
@@ -83,8 +95,8 @@ const Doctors = () => {
           </button>
         </div>
       </div>
-     { status.isDeleteConfirmationModalOpen && <DeleteConfirmationModal />}
-     { status.isDoctorDetailModalOpen && <DoctorDetailModal />}
+      {status.isDeleteConfirmationModalOpen && <DeleteConfirmationModal />}
+      {status.isDoctorDetailModalOpen && <DoctorDetailModal />}
     </>
   );
 };

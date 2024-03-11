@@ -16,7 +16,6 @@ const UpdateDoctor = () => {
       (async () => {
         const response = await retrieveDoctorByDoctorId(doctorId);
         setDoctor(response);
-        console.log(doctor);
       })();
     } catch (error) {
       console.log(error);
