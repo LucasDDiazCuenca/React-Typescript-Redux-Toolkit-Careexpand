@@ -39,23 +39,23 @@ const Doctor: React.FC<DoctorProps> = ({ doctor }) => {
           />
           <div>
             <p
-              className="font-bold p-1 cursor-pointer"
+              className="font-bold p-2 cursor-pointer hover:bg-slate-100 hover:rounded-lg"
               onClick={() => handleDoctorDetailModal()}
             >
               {doctor.name} {doctor.lastname}{" "}
             </p>
-            <p className="font-light p-1">{doctor.email}</p>
+            <p className="font-light p-2">{doctor.email}</p>
           </div>
         </div>
         <div className="flex gap-10 mr-4">
-          <button>
+          <button className="hover:bg-slate-100 hover:rounded-full p-3">
             <img
               src="/doctor-component/delete.png"
               alt="icon of delete"
               onClick={handleDeleteDoctor}
             />
           </button>
-          <button>
+          <button className="hover:bg-slate-100 hover:rounded-full p-3">
             <img
               src="/doctor-component/update.png"
               alt="icon of update"

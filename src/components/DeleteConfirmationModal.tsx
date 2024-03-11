@@ -30,13 +30,13 @@ const DeleteConfirmationModal = () => {
         <p>Are you sure you want to delete this item?</p>
         <div className="flex gap-10 justify-center mt-10">
           <button
-            className="border border-[#A2C730] px-8 py-2 rounded-lg"
+            className="border border-[#A2C730] px-8 py-2 rounded-lg hover:border-2"
             onClick={() => handleCancelClick()}
           >
             Cancel
           </button>
           <button
-            className="bg-[#A2C730] px-8 py-2 rounded-lg"
+            className="bg-[#A2C730] px-8 py-2 rounded-lg hover:bg-[#91ad3f]"
             onClick={() => handleDeleteClick()}
           >
             Delete

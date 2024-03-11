@@ -47,7 +47,7 @@ const Doctors = () => {
         <div className="w-full flex justify-between px-8 pt-16 mb-16">
           <h1 className="text-2xl">Doctors</h1>
           <button
-            className="bg-[#2c9bcf] text-white p-1 rounded-md px-8"
+            className="bg-[#2c9bcf] text-white p-1 rounded-md px-8 hover:bg-[#295c73]"
             onClick={() => handleOpenCreateDoctorModal()}
           >
             + Add doctor
@@ -67,7 +67,7 @@ const Doctors = () => {
 
         <div className="w-full flex justify-center py-8">
           <button
-            className="bg-[#2c9bcf] text-white p-1 rounded-md px-5 mr-4"
+            className="bg-[#2c9bcf] text-white p-1 rounded-md px-5 mr-4 hover:bg-[#295c73]"
             onClick={() => setPage((old) => Math.max(old - 1, 1))}
             disabled={page === 1}
           >
@@ -87,7 +87,7 @@ const Doctors = () => {
             )
           )}
           <button
-            className="bg-[#2c9bcf] text-white p-1 rounded-md px-5"
+            className="bg-[#2c9bcf] text-white p-1 rounded-md px-5 hover:bg-[#295c73]"
             onClick={() => setPage((old) => Math.min(old + 1, totalPages))}
             disabled={page === totalPages}
           >

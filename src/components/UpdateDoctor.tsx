@@ -149,12 +149,15 @@ const UpdateDoctor = () => {
 
           <div className="flex justify-end gap-10 mt-10">
             <button
-              className="border border-[#A2C730] px-8 py-2 rounded-lg"
+              className="border border-[#A2C730] px-8 py-2 rounded-lg hover:border-2"
               onClick={() => handleCancelButton}
             >
               Cancel
             </button>
-            <button type="submit" className="bg-[#A2C730] px-8 py-2 rounded-lg">
+            <button
+              type="submit"
+              className="bg-[#A2C730] px-8 py-2 rounded-lg hover:bg-[#91ad3f]"
+            >
               Update
             </button>
           </div>
