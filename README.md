@@ -1,4 +1,4 @@
-# CRUD App for Careexpand's interview
+# CRUD App for Careexpand
 
 <img src="./public/readme/header-image.png" alt="header image" width="600">
 
@@ -51,3 +51,7 @@ To run the project locally (this tag will remain open/listening):
 P.S: If you create a doctor and click over the full name or the pic, a modal will apear to show more information related to the doctor. 
 
 I hope you enjoy this tiny App 😃
+
+Feel free to visit my portfolio just in case you want yo see a bit more about me: 
+
+https://www.lucasdiaz.xyz/
