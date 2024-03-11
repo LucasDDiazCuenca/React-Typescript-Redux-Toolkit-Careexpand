@@ -21,6 +21,16 @@ And its's wireframe:
 
 - https://www.figma.com/proto/sxW2yznrFTMdQeZbbpOZ1D/CRUD-Interview-Careexpand?type=design&node-id=0-1&t=bZ3JPv4Z4k691sTC-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=15%3A19&prev-org-id=external-teams
 
+## Use Cases
+
+In this app, only "Doctors" section is available. There, you can: 
+
+- list all doctors with pagination included
+- create a doctor
+- update a doctor
+- delete a doctor 
+- see full detail of a doctor in a modal
+
 
 ## Instructions 
 
