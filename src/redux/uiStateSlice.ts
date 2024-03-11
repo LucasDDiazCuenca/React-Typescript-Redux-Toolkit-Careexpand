@@ -72,6 +72,10 @@ const uiSlice = createSlice({
             state.isUpdateDoctorModalOpen = true;
             state.isCreateDoctorModalOpen = false;
         },
+        closeUpdateDoctorModal: (state) => {
+            state.isUpdateDoctorModalOpen = false;
+            state.isDoctorModalOpen = true;
+        },
         openCreateDoctorModal: (state) => {
             state.isDeleteConfirmationModalOpen = false;
             state.isUnderConstructionModalOpen = false;
@@ -100,6 +104,7 @@ export const {
     openDoctorDetailModal,
     closeDoctorDetailModal,
     openUpdateDoctorModal,
+    closeUpdateDoctorModal,
     openCreateDoctorModal,
     setErrorMessage,
     clearErrorMessage,

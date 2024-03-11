@@ -115,23 +115,21 @@ const CreateDoctor = () => {
               />
             </div>
           </div>
-          <p className="mt-3 text-[#818181] font-light">All fields maked with "*" are mandatorys</p>
+          <p className="mt-3 text-[#818181] font-light">
+            All fields maked with "*" are mandatorys
+          </p>
 
           <div className="flex justify-end gap-10 mt-10">
             <button
               className="border border-[#A2C730] px-8 py-2 rounded-lg"
-              onClick={() => handleCloseCreateDoctor()}
+              onClick={handleCloseCreateDoctor}
             >
               Cancel
             </button>
-            <button
-              type="submit"
-              className="bg-[#A2C730] px-8 py-2 rounded-lg"
-            >
+            <button type="submit" className="bg-[#A2C730] px-8 py-2 rounded-lg">
               Create
             </button>
           </div>
-
         </form>
       </div>
     </>

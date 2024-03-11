@@ -1,7 +1,7 @@
-import { DoctorType } from '../../interfaces/interfaces';
+import { NewDoctorType } from '../../interfaces/interfaces';
 
 
-export default function updateDoctor(doctorId: number, { name, lastname, birthdate, phone, email, urlimage }: DoctorType) {
+export default function updateDoctor(doctorId: number, { name, lastname, birthdate, phone, email, urlimage }: NewDoctorType) {
     if (!doctorId) {
         throw new Error('Missing doctorId');
     }
