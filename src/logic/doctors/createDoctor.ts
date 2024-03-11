@@ -1,3 +1,13 @@
+/**
+ * The function `createDoctor` creates a new doctor entry with provided information, including
+ * validating the URL image format if provided.
+ * @param {NewDoctorType}  - - `name`: The first name of the doctor.
+ * @returns The `createDoctor` function is returning a Promise. Inside the function, it makes a POST
+ * request to 'http://localhost:3002/doctors' with the provided doctor data (name, lastname, birthdate,
+ * phone, email, and urlimage) in the request body. The function does some validation checks, sets a
+ * placeholder image if urlimage is empty, and then returns the result of
+ */
+
 import { NewDoctorType } from '../../interfaces/interfaces';
 
 const placeholderImage = 'https://via.placeholder.com/200/771796'
