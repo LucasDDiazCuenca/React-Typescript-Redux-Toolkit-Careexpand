@@ -1,15 +1,15 @@
-# App proposal for Careexpand interview
+# CRUD App for Careexpand's interview
 
 <img src="./public/readme/header-image.png" alt="header image" width="600">
 
 
-This is a simple CRUD example created in order to showcase knowledge related to frontend development using React, a couple of libraries & the use of Figma. This app was made using the boundler Vite with: 
+This is a simple CRUD example created in order to showcase knowledge related to frontend development using React, a couple of libraries & the use of Figma. This app was made using the boundler -> Vite, with: 
 
 - React-TS 
 - React-redux
 - Redux Toolkit 
 - Tailwind 
-- Json server 
+- Json-server 
 
 
 ## Figma 
@@ -29,17 +29,15 @@ __important!!__ -> In order to run the project, __VITE must be installed__ in th
 First, you'll have to clone this repository into local and execute the next instructions in a terminal: 
 
 To install all the dependencies:
-- npm i 
+- __npm i__ 
 
 To build and run the backend (this tag will remain open/listening) : 
-- npm run server 
+- __npm run server__ 
 
 To run the project locally (this tag will remain open/listening): 
-- npm run dev
+- __npm run dev__
 
 
+P.S: If you create a doctor and click over the full name or the pic, a modal will apear to show more information related to the doctor. 
 
-
-
-
-
+I hope you enjoy this tiny App 😃
