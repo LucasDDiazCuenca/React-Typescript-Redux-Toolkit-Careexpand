@@ -10,20 +10,19 @@ import CreateDoctor from "./components/CreateDoctor";
 import UpdateDoctor from "./components/UpdateDoctor";
 
 function App() {
-  const status = useSelector((state: RootState) => state.ui);
+	const status = useSelector((state: RootState) => state.ui);
 
-  return (
-    <>
-      <div className="h-screen w-screen flex">
-        <SideBar></SideBar>
-        {status.isDoctorModalOpen && <Doctors></Doctors>}
-        {status.isUnderConstructionModalOpen && <UnderConstruction></UnderConstruction>}
-        {status.isCreateDoctorModalOpen && <CreateDoctor></CreateDoctor>}
-        {status.isUpdateDoctorModalOpen && <UpdateDoctor></UpdateDoctor>}
-      </div>
-
-    </>
-  );
+	return (
+		<>
+			<div className="h-screen w-screen flex">
+				<SideBar></SideBar>
+				{status.isDoctorModalOpen && <Doctors></Doctors>}
+				{status.isUnderConstructionModalOpen && <UnderConstruction></UnderConstruction>}
+				{status.isCreateDoctorModalOpen && <CreateDoctor></CreateDoctor>}
+				{status.isUpdateDoctorModalOpen && <UpdateDoctor></UpdateDoctor>}
+			</div>
+		</>
+	);
 }
 
 export default App;

@@ -1,13 +1,13 @@
 {
-  "doctors": [
-    {
-      "id": "99bb",
-      "name": "asd",
-      "lastname": "asd",
-      "birthdate": "2024-03-24",
-      "phone": "123123",
-      "email": "lucas@gmail.com",
-      "urlimage": "https://via.placeholder.com/200/771796"
-    }
-  ]
+	"doctors": [
+		{
+			"id": "99bb",
+			"name": "asd",
+			"lastname": "asd",
+			"birthdate": "2024-03-24",
+			"phone": "123123",
+			"email": "lucas@gmail.com",
+			"urlimage": "https://via.placeholder.com/200/771796"
+		}
+	]
 }
