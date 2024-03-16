@@ -12,33 +12,35 @@
  * phone, email, urlimage) to the specified endpoint (`http://localhost:3002/doctors/`).
  * Once the request is completed, it returns without any specific value.
  */
-import { NewDoctorType } from '../../interfaces/interfaces';
+import { NewDoctorType } from "../../interfaces/interfaces";
 
+export default function updateDoctor(
+	doctorId: number,
+	{ name, lastname, birthdate, phone, email, urlimage }: NewDoctorType
+) {
+	if (!doctorId) {
+		throw new Error("Missing doctorId");
+	}
+	if (!name || !lastname || !birthdate || !phone || !email || !urlimage) {
+		throw new Error("Missing parameters");
+	}
 
-export default function updateDoctor(doctorId: number, { name, lastname, birthdate, phone, email, urlimage }: NewDoctorType) {
-    if (!doctorId) {
-        throw new Error('Missing doctorId');
-    }
-    if (!name || !lastname || !birthdate || !phone || !email || !urlimage) {
-        throw new Error('Missing parameters');
-    }
+	return (async () => {
+		await fetch(`http://localhost:3002/doctors/${doctorId}`, {
+			method: "PATCH",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify({
+				name,
+				lastname,
+				birthdate,
+				phone,
+				email,
+				urlimage,
+			}),
+		});
 
-    return (async () => {
-        await fetch(`http://localhost:3002/doctors/${doctorId}`, {
-            method: 'PATCH',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                name,
-                lastname,
-                birthdate,
-                phone,
-                email,
-                urlimage
-            })
-        })
-
-        return
-    })();
+		return;
+	})();
 }
